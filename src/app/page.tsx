@@ -1,6 +1,4 @@
-import Image from "next/image";
-import GridOption from "../../components/GridOption";
-import { url } from "inspector";
+import GridOption from "../components/GridOption";
 
 export default function Home() {
   return (
@@ -102,3 +100,5 @@ export default function Home() {
 
 // en el componente search no tuve que pasar ningun id en la url simplemente acceder 
 // a las props donde searchParams : q contiene el dato que se esta pasando por url
+
+// documentacion de oxylab https://developers.oxylabs.io/
