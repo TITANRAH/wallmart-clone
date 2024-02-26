@@ -32,32 +32,32 @@ export default function Home() {
         className="bg-green-100 h-64 col-span-2"
         />
         <GridOption
-        title= "Shop Toys"
+        title= "All you need for Match Day"
         image="https://links.papareact.com/m8e"
         className="bg-red-100 col-span-2 row-span-2"
         />
         <GridOption
-        title= "Shop Toys"
+        title= "Shop Gadgets"
         image="https://links.papareact.com/gs1"
         className="bg-orange-100 h-64"
         />
         <GridOption
-        title= "Shop Toys"
+        title= "Shop Beauty"
         image="https://links.papareact.com/4y0"
         className="bg-blue-100 h-64"
         />
         <GridOption
-        title= "Shop Toys"
+        title= "Shop Sports"
         image="https://links.papareact.com/sq2"
         className="bg-blue-100 h-64"
         />
         <GridOption
-        title= "Shop Toys"
+        title= "Enjoy free Shipping"
         image="https://links.papareact.com/9hf"
         className="bg-pink-100 h-64"
         />
         <GridOption
-        title= "Shop Toys"
+        title= "Flash Deals"
         image="https://links.papareact.com/qx7"
         className="bg-pink-100 h-64 col-span-2"
         />
