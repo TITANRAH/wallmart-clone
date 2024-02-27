@@ -19,6 +19,8 @@ function AddToCart(props: Props) {
 
   console.log("cart desde addtocart page", cart);
 
+  // que crea una nueva matriz con todos los elementos que pasan la prueba implementada por la función proporcionada.
+
   const howManyInCart = cart.filter(
     (item) => item.meta.sku === product.meta.sku
   ).length;

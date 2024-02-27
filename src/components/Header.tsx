@@ -18,7 +18,7 @@ import { getCartTotal } from "../../actions/getCartTotal";
 function Header() {
   const router = useRouter();
   const cart = useCartStore((state) => state.cart);
-  const total = getCartTotal(cart)
+  const total = getCartTotal(cart);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -26,6 +26,8 @@ function Header() {
     const input = e.currentTarget.input.value;
     router.push(`/search?q=${input}`);
   };
+
+  console.log(total);
   return (
     <header className="flex flex-col md:flex-row bg-walmart items-center  px-10 py-7 space-x-5">
       <Link href="/" className="mb-5 md:mb-0">
@@ -88,13 +90,16 @@ function Header() {
           </div>
         </Link>
         <Link
-          href="/"
+          href="/basket"
           className="flex text-white font-bold items-center space-x-2 text-sm"
         >
           <ShoppingCart size={20} />
           <div>
-            <p className="text-xs font-extralight">No Items</p>
-            <p>$0.00</p>
+            <p className="text-xs font-extralight">
+              {cart.length > 0 ? `${cart.length} items` : "No items"}
+            </p>
+
+            {total != "undefined 0.00" && <p>{total}</p>}
           </div>
         </Link>
       </div>

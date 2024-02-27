@@ -2,7 +2,7 @@ import GridOption from "../components/GridOption";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="flex-1">
 {/* algunos ocupan 2 columnas otros dos filas probar para ver efecto */}
       <div className="grid grid-cols-1 grid-flow-row-dense md:grid-cols-4 gap-6 m-6">
         <GridOption

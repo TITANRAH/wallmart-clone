@@ -19,6 +19,7 @@ export const useCartStore = create<CartState>()(
             cart: [...state.cart, product],
           }));
         },
+        // Se utiliza splice() para eliminar un elemento del carrito en el índice productRemove. El segundo argumento 1 indica que solo se eliminará un elemento.
         removeFromCart: (product: Product) => {
           const productRemove = get().cart.findIndex(
             (p) => p.meta.sku === product.meta.sku
